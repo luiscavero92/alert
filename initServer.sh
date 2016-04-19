@@ -5,7 +5,7 @@ then
 	sudo -u www-data php /var/app/bin/console doctrine:migrations:migrate -n
 	sudo -u www-data php /var/app/bin/console doctrine:fixtures:load -n
 else
-echo "no entra"
+echo "File /var/app/bin/console not found"
 fi
 
 
